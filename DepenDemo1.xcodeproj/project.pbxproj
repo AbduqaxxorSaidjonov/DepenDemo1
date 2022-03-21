@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7661903E27E8C88F0091C190 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7661904027E8C88F0091C190 /* Localizable.strings */; };
+		7661904527E8D0A10091C190 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661904427E8D0A10091C190 /* Localized.swift */; };
 		76C6382727D9DD280083A454 /* DepenDemo1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6382627D9DD280083A454 /* DepenDemo1App.swift */; };
-		76C6382927D9DD280083A454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6382827D9DD280083A454 /* ContentView.swift */; };
 		76C6382B27D9DD290083A454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C6382A27D9DD290083A454 /* Assets.xcassets */; };
 		76C6382E27D9DD290083A454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C6382D27D9DD290083A454 /* Preview Assets.xcassets */; };
 		76C6383027D9DD290083A454 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6382F27D9DD290083A454 /* Persistence.swift */; };
 		76C6383327D9DD290083A454 /* DepenDemo1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76C6383127D9DD290083A454 /* DepenDemo1.xcdatamodeld */; };
+		76C6383A27D9DD3B0083A454 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6383927D9DD3B0083A454 /* HomeScreen.swift */; };
+		76FFB55827E79ECD00FF5DAE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 76FFB55727E79ECD00FF5DAE /* Alamofire */; };
+		76FFB55B27E7BF0400FF5DAE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 76FFB55A27E7BF0400FF5DAE /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7661903F27E8C88F0091C190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7661904127E8C8DE0091C190 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7661904227E8C9020091C190 /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7661904327E8C9180091C190 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7661904427E8D0A10091C190 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		76C6382327D9DD280083A454 /* DepenDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepenDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C6382627D9DD280083A454 /* DepenDemo1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenDemo1App.swift; sourceTree = "<group>"; };
-		76C6382827D9DD280083A454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76C6382A27D9DD290083A454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C6382D27D9DD290083A454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76C6382F27D9DD290083A454 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		76C6383227D9DD290083A454 /* DepenDemo1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DepenDemo1.xcdatamodel; sourceTree = "<group>"; };
+		76C6383927D9DD3B0083A454 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,12 +39,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FFB55B27E7BF0400FF5DAE /* Kingfisher in Frameworks */,
+				76FFB55827E79ECD00FF5DAE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7661903927E8C8080091C190 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				76C6382F27D9DD290083A454 /* Persistence.swift */,
+				76C6382A27D9DD290083A454 /* Assets.xcassets */,
+				7661904427E8D0A10091C190 /* Localized.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		7661903A27E8C81C0091C190 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				76C6383927D9DD3B0083A454 /* HomeScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		7661903B27E8C8330091C190 /* language */ = {
+			isa = PBXGroup;
+			children = (
+				7661904027E8C88F0091C190 /* Localizable.strings */,
+			);
+			path = language;
+			sourceTree = "<group>";
+		};
 		76C6381A27D9DD280083A454 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +92,10 @@
 		76C6382527D9DD280083A454 /* DepenDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				7661903B27E8C8330091C190 /* language */,
+				7661903A27E8C81C0091C190 /* screens */,
+				7661903927E8C8080091C190 /* apputils */,
 				76C6382627D9DD280083A454 /* DepenDemo1App.swift */,
-				76C6382827D9DD280083A454 /* ContentView.swift */,
-				76C6382A27D9DD290083A454 /* Assets.xcassets */,
-				76C6382F27D9DD290083A454 /* Persistence.swift */,
 				76C6383127D9DD290083A454 /* DepenDemo1.xcdatamodeld */,
 				76C6382C27D9DD290083A454 /* Preview Content */,
 			);
@@ -89,6 +126,10 @@
 			dependencies = (
 			);
 			name = DepenDemo1;
+			packageProductDependencies = (
+				76FFB55727E79ECD00FF5DAE /* Alamofire */,
+				76FFB55A27E7BF0400FF5DAE /* Kingfisher */,
+			);
 			productName = DepenDemo1;
 			productReference = 76C6382327D9DD280083A454 /* DepenDemo1.app */;
 			productType = "com.apple.product-type.application";
@@ -115,8 +156,15 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uz,
+				fr,
 			);
 			mainGroup = 76C6381A27D9DD280083A454;
+			packageReferences = (
+				76FFB55627E79ECD00FF5DAE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				76FFB55927E7BF0400FF5DAE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 76C6382427D9DD280083A454 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C6382E27D9DD290083A454 /* Preview Assets.xcassets in Resources */,
+				7661903E27E8C88F0091C190 /* Localizable.strings in Resources */,
 				76C6382B27D9DD290083A454 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,20 +192,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7661904527E8D0A10091C190 /* Localized.swift in Sources */,
+				76C6383A27D9DD3B0083A454 /* HomeScreen.swift in Sources */,
 				76C6383027D9DD290083A454 /* Persistence.swift in Sources */,
 				76C6383327D9DD290083A454 /* DepenDemo1.xcdatamodeld in Sources */,
-				76C6382927D9DD280083A454 /* ContentView.swift in Sources */,
 				76C6382727D9DD280083A454 /* DepenDemo1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		7661904027E8C88F0091C190 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7661903F27E8C88F0091C190 /* en */,
+				7661904127E8C8DE0091C190 /* ru */,
+				7661904227E8C9020091C190 /* uz */,
+				7661904327E8C9180091C190 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		76C6383427D9DD290083A454 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -218,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -347,6 +413,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76FFB55627E79ECD00FF5DAE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		76FFB55927E7BF0400FF5DAE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76FFB55727E79ECD00FF5DAE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76FFB55627E79ECD00FF5DAE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		76FFB55A27E7BF0400FF5DAE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76FFB55927E7BF0400FF5DAE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		76C6383127D9DD290083A454 /* DepenDemo1.xcdatamodeld */ = {
